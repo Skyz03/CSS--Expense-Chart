@@ -17,6 +17,20 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+.card__current {
+  max-width: 30%;
+  width: 100%;
+  background-color: hsl(10deg, 79%, 65%);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  padding: 1.5rem 1rem;
+  color: hsl(27deg, 66%, 92%);
+}
+.card__number {
+  padding: 0.5rem 0;
 }
 
 .attribution {

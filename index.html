@@ -18,11 +18,24 @@
   </head>
   <body>
     <div class="card__container">
-      <div class="card__current">My balance $921.48</div>
+      <div class="card__current">
+        <div class="card__text">
+          <p class="card__dtext">My balance</p>
+          <h2 class="card__number">$921.48</h2>
+        </div>
+
+        <div class="card__img">
+          <img src="./images/logo.svg" alt="card-logo" />
+        </div>
+      </div>
 
       <div class="card__calculation">
-        Spending - Last 7 days mon tue wed thu fri sat sun Total this month
-        $478.33 +2.4% from last month
+        Spending - Last 7 days mon tue wed thu fri sat sun
+
+        <p class="card__dtext">Total this month</p>
+
+        <h2 class="card__number">$478.33</h2>
+        +2.4% from last month
       </div>
     </div>
     <!-- <div class="attribution">
@@ -31,5 +44,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </div> -->
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>

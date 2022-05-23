@@ -28,6 +28,22 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+  }
+
+  &__current {
+    max-width: 30%;
+    width: 100%;
+    background-color: $primary;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+    color: $creme;
+  }
+
+  &__number {
+    padding: 0.5rem 0;
   }
 }
 
