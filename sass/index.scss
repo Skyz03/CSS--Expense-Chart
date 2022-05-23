@@ -19,6 +19,7 @@ $pale-orange: hsl(33, 100%, 98%);
 
 body {
   font-family: "DM Sans", sans-serif;
+  background-color: $pale-orange;
 }
 
 .card {
@@ -42,8 +43,39 @@ body {
     color: $creme;
   }
 
+  &__dtext {
+    color: #ccc;
+    font-size: 0.8rem;
+  }
+
   &__number {
     padding: 0.5rem 0;
+
+    &--big {
+      font-size: 2rem;
+    }
+  }
+
+  &__calculation {
+    max-width: 30%;
+    width: 100%;
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 1.5rem 1rem;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1.5rem 0 0;
+    border-top: 1px solid $creme;
+  }
+
+  &__title {
+    font-size: 1.5rem;
   }
 }
 
