@@ -77,8 +77,36 @@ body {
   &__title {
     font-size: 1.5rem;
   }
+
+  &__days {
+    color: #cccc;
+    font-size: 0.8rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
+//the percentage bar
+.percentage::before {
+  content: "";
+  display: block;
+  background-color: red;
+}
+
+.percentage-20:after {
+  width: 20%;
+}
+.percentage-30:after {
+  width: 30%;
+}
+
+@for $i from 1 through 100 {
+  .percentage-#{$i}:before {
+    $value: ($i * 1%);
+    height: $value;
+  }
+}
 .attribution {
   font-size: 11px;
   text-align: center;
