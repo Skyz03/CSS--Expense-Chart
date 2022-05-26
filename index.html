@@ -36,29 +36,50 @@
 
       <div class="card__calculation">
         <h1 class="card__title">Spending - Last 7 days</h1>
-        <dl class="card__days">
-          <dd class="percentage percentage-20">
-            <span class="text">mon</span>
-          </dd>
-          <dd class="percentage percentage-80">
-            <span class="text">tue</span>
-          </dd>
-          <dd class="percentage percentage-80">
-            <span class="text">wen</span>
-          </dd>
-          <dd class="percentage percentage-60">
-            <span class="text">thu</span>
-          </dd>
-          <dd class="percentage percentage-50">
-            <span class="text">fri</span>
-          </dd>
-          <dd class="percentage percentage-40">
-            <span class="text">sat</span>
-          </dd>
-          <dd class="percentage percentage-80">
-            <span class="text">sun</span>
-          </dd>
-        </dl>
+        <table
+          id="my-chart"
+          class="charts-css column data-spacing-10 show-labels hide-data"
+        >
+          <caption>
+            Bar Example #17
+          </caption>
+          <thead>
+            <tr>
+              <th scope="col">Year</th>
+              <th scope="col">Progress</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">mon</th>
+              <td style="--size: 0.2"></td>
+            </tr>
+            <tr>
+              <th scope="row">tue</th>
+              <td style="--size: 0.4"></td>
+            </tr>
+            <tr>
+              <th scope="row">wen</th>
+              <td style="--size: 0.6"></td>
+            </tr>
+            <tr>
+              <th scope="row">thu</th>
+              <td style="--size: 0.8"></td>
+            </tr>
+            <tr>
+              <th scope="row">fri</th>
+              <td style="--size: 1"></td>
+            </tr>
+            <tr>
+              <th scope="row">sat</th>
+              <td style="--size: 1"></td>
+            </tr>
+            <tr>
+              <th scope="row">sun</th>
+              <td style="--size: 0.5"></td>
+            </tr>
+          </tbody>
+        </table>
         <div class="card__numbers">
           <div>
             <p class="card__dtext">Total this month</p>

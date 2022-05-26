@@ -87,27 +87,26 @@ body {
   }
 }
 
-//the percentage bar
-
-.percentage::before {
-  content: "";
-  display: block;
-  background-color: red;
+#my-chart {
+  --color: red;
+  margin: 1rem 0;
 }
 
-.percentage-20:after {
-  width: 20%;
-}
-.percentage-30:after {
-  width: 30%;
-}
+table {
+  --color: hsl(10, 79%, 65%) !important;
+  tbody {
+    td {
+      border-radius: 5px;
+      width: 40px !important;
 
-@for $i from 1 through 100 {
-  .percentage-#{$i}:before {
-    $value: ($i * 1%);
-    height: $value;
+      &:hover {
+        --color: hsl(10, 62%, 70%) !important;
+        cursor: pointer;
+      }
+    }
   }
 }
+
 .attribution {
   font-size: 11px;
   text-align: center;
