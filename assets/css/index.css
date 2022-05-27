@@ -75,13 +75,25 @@ body {
 table {
   --color: hsl(10, 79%, 65%) !important;
 }
+table tbody th {
+  color: #b8b8b8 !important;
+}
 table tbody td {
   border-radius: 5px;
   width: 40px !important;
 }
 table tbody td:hover {
-  --color: hsl(10, 62%, 70%) !important;
+  opacity: 0.7 !important;
   cursor: pointer;
+}
+
+.tooltip {
+  bottom: 115% !important;
+  background-color: #000 !important;
+}
+
+.tooltip::after {
+  content: none !important;
 }
 
 .attribution {
